@@ -1,0 +1,100 @@
+#space {
+    background-image: url("/static/images/slo.gif");
+    background-size: 100%;
+}
+
+
+#rppp{
+    border-right: 0cm;
+    margin-top: 5%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-color: rgb(255, 255, 255);
+    border-radius: 30%;
+    border-style: solid;
+}
+
+#buttonn1{
+    cursor: pointer;
+    margin-top: -17%;
+    margin-left: -20%;
+    border-radius: 100%;
+    padding: 40%;
+    box-shadow: 0 6px #999;
+    background: transparent; 
+    background-color: rgba(255,255,255, 0.05); 
+    color: white;
+}
+#buttonn2{
+    cursor: pointer;
+    margin-top: -17%;
+    margin-left: 10%;
+    border-radius: 100%;
+    padding: 45%;
+    box-shadow: 0 6px #999;
+    background: transparent; 
+    background-color: rgba(255,255,255, 0.05); 
+    color: white;
+}
+#buttonn3{
+    cursor: pointer;
+    margin-top: -18%;
+    margin-left: 10%;
+    border-radius: 49%;
+    padding: 60%;
+    box-shadow: 0 6px #999;
+    background: transparent; 
+    background-color: rgba(255,255,255, 0.05); 
+    color: white;
+}
+#buttonn4{
+    cursor: pointer;
+    margin-top: -11%;
+    margin-left: 14%;
+    border-radius: 100%;
+    padding: 13%;
+    box-shadow: 0 6px #999;
+    background: transparent; 
+    background-color: rgba(255,255,255, 0.05); 
+    color: white;
+}
+#buttonnn1{
+    margin-left: 41%;
+    margin-top: -6.8%;
+}
+#buttonnn2{
+    margin-left: 39%;
+    margin-top: -7%;
+}
+#buttonnn3{
+    margin-left: 39%;
+    margin-top: -7.1%;
+}
+#buttonnn4{
+    margin-left: 43%;
+    margin-top: -7%;
+}
+
+#buttonn1:hover {
+    background-color:rgba(255, 255, 255);
+    color: black;
+}
+#buttonn2:hover {
+    background-color:white;
+    color: black;
+}
+#buttonn3:hover {
+    background-color:white;
+    color: black;
+}
+#buttonn4:hover {
+    background-color:white;
+    color: black;
+}
+/* 
+#lamp{
+    margin-top: -15%;
+    
+} */

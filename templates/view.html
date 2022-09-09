@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+       
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href ="/static/css/view.css"> 
+        <style>
+          @media print {
+             
+            html,
+            body {
+        
+                display: none;
+            }
+          }
+        
+          
+        
+        html {
+          user-select: none;
+        }
+        </style>
+</head>
+
+<body id='abody'>
+  
+      
+  <script language="javascript">
+    var noPrint=true;
+    var noCopy=true;
+    var noScreenshot=true;
+    var autoBlur=true;
+    </script>
+
+  <script type="text/javascript" src="https://pdfanticopy.com/noprint.js"></script>
+{% comment %} <img src="/static/images/psk2826.jpg" height="90px" width="200px" alt="Sorry image not found"> {% endcomment %}
+<script>
+document.addEventListener('keyup', (e) => {
+  if (e.key == 'PrintScreen') {
+      
+      navigator.clipboard.writeText('noScreenshot');
+      alert('Screenshot Disabled')
+      
+    }
+  
+})
+
+</script> 
+
+    <div class="container mt-5" >
+        <div class="row" style="text-color: #ffff;">
+            <div class="col-12">
+              
+
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th >S/N</th>
+                        <th >Coordinate</th>
+                        <th >Location</th>
+                        <th >Satellite</th>
+                        <th >type_of_data</th>
+                        <th >Permissions</th>
+                        <th >File Link</th>
+                        
+
+                        <th >Download</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for d in datass %}
+                      {% for i in d.viewusers %}
+                      
+                      {% if i == user %}
+
+                     
+
+                      <tr>
+                        <th>{{forloop.counter}}</th>
+                        {% comment %} <th>{{d.coordinate}}</th> {% endcomment %}
+                        <th>{{d.coordinate}}</th>
+                        <th>{{d.place}}</th>
+                        <th>{{d.satellite}}</th>
+                        <th>{{d.datatype}}</th>
+                        
+                        <th>
+                          <form action="modify_permissions" method="POST" enctype="multipart/form-data">
+                          {% csrf_token %}
+                          <button type='submit' name='modify_permission' value={{d.ipfs_hash}}>Modify Permission</button>
+                          </form>
+                        </th>
+                        {% comment %} <th><a  href="https://ipfs.io/ipfs/{{d.ipfs_hash}}" target="_blank">open</a></th> {% endcomment %}
+                        <th><a  href="ipfs://{{d.ipfs_hash}}" target="_blank">open</a></th>
+                        {% comment %} {% if groupss == 'super_user' or groupss == 'admin'  or groupss == 'employee'%}  {% endcomment %}
+                        <form action="downloads" method="POST" enctype="multipart/form-data">
+                          {% csrf_token %}
+                        <th>
+                          {% comment %} <input type='' name='download' value='{{d.ipfs_hash}}'> {% endcomment %}
+                          
+
+                          <button type='submit' name='download' value='{{d.ipfs_hash}}'>Download</button></th>
+                          
+
+                        </form>
+                        {% comment %} {% endif %} {% endcomment %}
+                        
+
+                        
+                       
+                      </tr>
+                      {% endif %}
+                      {% endfor %}
+                      {% endfor %}
+                      
+                    </tbody>
+                  </table>
+
+
+
+            </div>
+        </div>
+    </div>
+
+  </body>
+  </html>

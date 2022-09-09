@@ -1,0 +1,23 @@
+/* #abody{
+    background-image: url("/static/image/stars.gif");
+    background-size: 150vw;
+    float: left;
+    height: 50vw;
+    width: 50vw; 
+  background-repeat: no-repeat;
+  padding: 15px;
+  
+
+} */
+
+#abody{
+    background-image: url('/static/images/photo-1534796636912-3b95b3ab5986.jpg');
+    background-size: 100vw;
+    /* background-repeat: no-repeat; */
+}
+th {
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fbf7f7;
+   }

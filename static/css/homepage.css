@@ -1,0 +1,43 @@
+* {
+    margin-left: 0;
+    margin-right:0;
+    margin-bottom: 0;
+    padding: 0;
+    margin-top: 0;
+    box-sizing: border-box;
+  }
+
+#foot {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(2, 11, 16);
+    color: white;
+    margin-top: 0.03%;
+    
+  }
+
+  .navbar-brand {
+    letter-spacing: 3px;
+    color: #ffff;
+  }
+  
+  .navbar-brand:hover {
+      color: #ffff;
+  }
+  
+  .navbar-scroll .nav-link,
+  .navbar-scroll .fa-bars {
+    color: #fff;
+  }
+  
+  .navbar-scrolled .nav-link,
+  .navbar-scrolled .fa-bars {
+    color: #fff;
+  }
+  
+  .navbar-scrolled {
+    background-color: #ffede7;
+  }
+
+
+  

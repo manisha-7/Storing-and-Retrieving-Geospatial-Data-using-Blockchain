@@ -1,0 +1,9 @@
+#abc{
+  background: url("/static/images/abc.jpg");
+  /* background-repeat: no-repeat; */
+  /* background-size: 70%; */
+}
+
+#star{
+  color: crimson;
+}

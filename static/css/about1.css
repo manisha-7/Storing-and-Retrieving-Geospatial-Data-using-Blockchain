@@ -1,0 +1,65 @@
+#xyz{
+   
+    background: url("/static/images/download.jpg") no-repeat ;
+    background-repeat: no-repeat;
+    background-size: 150vw;
+    float: left;
+    height: 50vw;
+    width: 50vw; 
+  padding: 15px;
+
+  /* background-image: url("/static/image/ISRO-logo.jpeg") , url("/static/image/gslv.png") , url("/static/image/download.jpg") ;
+  background-position: right top, right bottom , left top;
+  background-repeat: no-repeat, no-repeat, repeat;
+  padding: 15px; */
+  /* background-size: 50px, 130px, auto; */
+  
+
+}
+#content img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  /* padding-top: 10px; */
+  margin-top: 45px;
+}
+#content1 img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  /* padding-top: 10px; */
+   margin-top: 350px;
+} 
+
+/* #text{
+    position: absolute;
+  bottom: 20px;
+  right: 20px;
+  /* background-color: black; */
+  /* color:rgb(5, 5, 5);
+  padding-left: 20px;
+  padding-right: 20px;
+} */ 
+
+.navbar-brand {
+  letter-spacing: 3px;
+  color: #c24244;
+}
+
+.navbar-brand:hover {
+    color: #c24244;
+}
+
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars {
+  color: #7f4722;
+}
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars {
+  color: #7f4722;
+}
+
+.navbar-scrolled {
+  background-color: #ffede7;
+}

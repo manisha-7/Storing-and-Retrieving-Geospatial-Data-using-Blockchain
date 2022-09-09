@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/upload.css">
+
+    <title> | ISRO page</title>
+    
+    </head>
+    <body id='abc'>
+      
+      <nav class="navbar navbar-expand-lg navbar-scroll shadow-0" style="background: linear-gradient(to bottom, #000000 0%, #0066cc 100%); margin-top: 0.1%">
+        <div class="container">
+          <a class="navbar-brand" href="/" style='color: #FFFFFF;'>Home</a>
+          <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+            aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="d-flex justify-content-start align-items-center">
+              <i class="fas fa-bars"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link px-3" href="/login" style='color: #FFFFFF;'>Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="/home" style='color: #FFFFFF;'>Dashboard</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link px-3" href="/about" style='color: #FFFFFF;'>About Us</a>
+              </li>
+           
+              <li class="nav-item">
+                <a class="nav-link px-3" href="mailto:isro_terminalstack@outlook.com" style='color: #FFFFFF;'>Contact Us</a>
+              </li>
+              <div class="d-flex justify-content-center links" style="padding-top: 1%;">
+                <a href="{% url 'logoutUser' %}" class="ml-2"><button style="background: transparent; border-color: transparent; color: white;">logout</button></a>
+            </div>
+            </ul>
+      
+            <ul class="navbar-nav flex-row" style="margin-left: 40%;">
+                <li class="nav-item">
+                  <a class="nav-link pe-3" href="https://www.youtube.com/channel/UCw5hEVOTfz_AfzsNFWyNlNg" target='_blank'>
+                    <i class="fab fa-youtube" style='color: white'></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3" href="https://m.facebook.com/ISRO" target='_blank'>
+                    <i class="fab fa-facebook-f" style='color: white'></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ps-3" href="https://instagram.com/isro.gov.in_?igshid=YmMyMTA2M2Y=" target='_blank'>
+                    <i class="fab fa-instagram" style='color: white'></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ps-3" href="https://twitter.com/isro" target='_blank'>
+                    <i class="fab fa-twitter" style='color: white'></i>
+                  </a>
+                </li>
+
+                
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+    
+          <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<section class="vh-100 bg-image" style="padding-top: 1%;">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3" style="margin-top: 1%;">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Enter Details</h2>
+
+              <form action="upload" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% comment %} <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">Coordinates<span id='star'>*</span></label>
+                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" name="coordinate" placeholder='41 24.2028, 2 10.4418' required/>
+                </div> {% endcomment %}
+                
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">Date<span id='star'>*</span></label>
+                  <input type="date" id="form3Example1cg" class="form-control form-control-lg" name="date" required/>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cdggg">Satellite<span id='star'>*</span></label>
+                    <input type="text" id="form3Example4cdggg" class="form-control form-control-lg" name="satellite" placeholder='NSA-1' required/>
+                </div> 
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cdg">Location<span id='star'>*</span></label>
+                    <input type="text" id="form3Example4cdg" class="form-control form-control-lg" name="location" placeholder='Ahemdabad' required/>
+                </div> 
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cdgd">Users Who can Access<span id='star'>*</span></label>
+                    <input type="text" id="form3Example4cdgd" class="form-control form-control-lg" name="viewusers" placeholder='dev,krupa' required/>
+                </div> 
+
+                {% comment %} <div class="form-outline mb-4">
+                    <input type="File" id="form3Example4cdg" class="form-control form-control-lg" name="my_file"/>
+                    <label class="form-label" for="form3Example4cdg">Select File</label>
+                </div>  {% endcomment %}
+                <div class="form-group">
+                  <label for="{{form.files_data.id_for_label}}">File<span id='star'>*</span></label>
+                  {{form.files_data}}         
+                </div>
+                
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="type_of_data">Data Type<span id='star'>*</span></label>
+                  <select name="type_of_data" id="" class="form-control">
+                    <option value='none' default>Select data type</option>
+                    <option value="image">Image</option>
+                    <option value="text">Text</option>
+                    <option value="video">Video</option>
+                </select>
+                </div>
+
+
+                <div class="d-flex justify-content-center">
+                  <button type="submit"
+                  class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Upload</button>
+                </div>
+
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

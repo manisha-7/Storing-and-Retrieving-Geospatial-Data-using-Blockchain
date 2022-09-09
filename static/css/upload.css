@@ -1,0 +1,9 @@
+#star{
+    color: crimson;
+}
+
+body{
+    background-image: url('/static/images/imagess.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: 63%;
+}

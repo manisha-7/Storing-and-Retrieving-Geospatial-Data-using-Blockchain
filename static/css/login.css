@@ -1,0 +1,22 @@
+body {
+   
+    /* background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/d937841bd117503f81fd1de7/pexels-photo-5269680.jpeg"); */
+    background-image: url("/static/images/login_back.jpeg");
+    background-size: 105%; 
+    /* float: left; */
+   width: 60%;
+    background-position-y: 23%;
+    background-repeat: no-repeat;
+    margin-top: -10%;
+    background-position-x: 100%;
+}
+
+#space {
+   margin-left: 50%;
+   margin-top: 25%;
+   
+}
+
+#button_login{
+    margin-top: 10%;
+}
